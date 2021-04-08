@@ -153,7 +153,7 @@ public class ScheMainex{
 						} else if ((10.10 <= hortimeCount) && (hortimeCount <= 11.09) && AmPm == "AM") { // 3교시
 							horz.setBounds(12, 238, 477, 40);
 							grCount = 3;
-						} else if ((11.10 <= hortimeCount) && (hortimeCount <= 11.59) && (0.01 <= hortimeCount) && (hortimeCount <= 0.10)) { // 4교시
+						} else if ((11.10 <= hortimeCount) && (hortimeCount <= 11.59) || (0.01 <= hortimeCount) && (hortimeCount <= 0.10)) { // 4교시
 							horz.setBounds(12, 288, 477, 40);
 							grCount = 4;
 						} else if ((0.10 <= hortimeCount) && (hortimeCount <= 1.09) && AmPm == "PM") { // 점심
